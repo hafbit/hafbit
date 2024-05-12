@@ -1,0 +1,14 @@
+<svg height="400" width="400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <clipPath id="cut-off-left">
+            <rect x="200" y="0" width="200" height="400" />
+        </clipPath>
+        <clipPath id="cut-off-right">
+            <rect x="0" y="0" width="200" height="400" />
+        </clipPath>
+    </defs>
+    <circle cx="200" cy="200" r="125" fill="none" stroke="white" stroke-width="150" />
+    <circle cx="200" cy="200" r="75" fill="none" stroke="black" stroke-width="50" clip-path="url(#cut-off-left)" />
+    <circle cx="200" cy="200" r="125" fill="none" stroke="black" stroke-width="50" clip-path="url(#cut-off-right)" />
+    <circle cx="200" cy="200" r="175" fill="none" stroke="black" stroke-width="50" clip-path="url(#cut-off-left)" />
+</svg>
